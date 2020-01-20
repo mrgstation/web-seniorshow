@@ -321,9 +321,22 @@ ul {
   ul li {
     list-style: none; }
 
+.section-content {
+  padding: 40px 0; }
+  @media (min-width: 768px) {
+    .section-content {
+      padding: 50px 0; } }
+
 /* =============
     Typography
 ============= */
+body, p {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 128px; }
+
 h1, h2, h3, h4, h5, p {
   padding: 0;
   margin: 0; }
@@ -355,3 +368,41 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  padding: 10px;
+  position: relative; }
+  @media (min-width: 768px) {
+    footer {
+      text-align: center; } }
+  footer h4 {
+    bottom: 20px;
+    color: #fff;
+    position: absolute;
+    right: 20px; }
+
+/* =============
+    Heroes
+============= */
+#hero {
+  background-image: url("../img/home/monospace-c.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 30vh;
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 1200px) {
+    #hero {
+      height: 100vh; } }
+  #hero h1 {
+    font-weight: 300;
+    font-size: 2.875rem;
+    margin-top: 15vh;
+    color: #fff; }
+    @media (min-width: 768px) {
+      #hero h1 {
+        font-size: 3.75rem;
+        margin-top: 20vh; } }
+    @media (min-width: 1200px) {
+      #hero h1 {
+        font-size: 5rem;
+        margin-top: 10vh; } }

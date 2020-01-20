@@ -1,3 +1,17 @@
 /* =============
     Footer
 ============= */
+footer {
+    padding: 10px;
+    position: relative;
+    @include md {
+        text-align: center;
+    }
+
+    h4 {
+        bottom: 20px;
+        color: $white;
+        position: absolute;
+        right: 20px;
+    }
+}
