@@ -1,0 +1,34 @@
+// /* =============
+//     Everything
+// ============= */
+
+#meet-designers-intro{
+    background-color: $white;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../img/pattern/grey-pattern.svg");
+    height: 20vh;
+}
+
+#name-gallery{
+    background-color: $black;
+}
+
+#name-gallery aside{
+    display: grid;
+    // grid-gap: 5px;
+    grid-template-columns: 50% 50%;
+}
+
+#faculty-list{
+    background-color: #F7F7F7;
+
+    @include md{
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+}
+
+#faculty-list li{
+    padding: 2px 0px;
+}

@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/deploy/about.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/about.html",
+		"oF": 0
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -18,6 +26,273 @@
 		"oAP": "/deploy/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/deploy/img/20-logo-mini.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/20-logo-mini.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/20-logo-sm.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/20-logo-sm.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/2020-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/2020-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/about/map.png": {
+		"ft": 32768,
+		"iS": 210784,
+		"oA": 0,
+		"oAP": "/deploy/img/about/map.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/button-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/button-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/footer/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/footer/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/gallery/decision-1.png": {
+		"ft": 32768,
+		"iS": 188211,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/decision-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/gallery/energy.png": {
+		"ft": 32768,
+		"iS": 330034,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/energy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/gallery/flower-zoom.png": {
+		"ft": 32768,
+		"iS": 146607,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/flower-zoom.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/gallery/gig-poster_v4.png": {
+		"ft": 32768,
+		"iS": 385299,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gig-poster_v4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/gallery/keetra7.png": {
+		"ft": 32768,
+		"iS": 143057,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/keetra7.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/gallery/magazine.png": {
+		"ft": 32768,
+		"iS": 255784,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/magazine.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/gallery/monospace-3.png": {
+		"ft": 32768,
+		"iS": 229190,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/monospace-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/gallery/ny-subway-01.png": {
+		"ft": 32768,
+		"iS": 164653,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/ny-subway-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/gallery/paper-sculpture.png": {
+		"ft": 32768,
+		"iS": 96409,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/paper-sculpture.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/gallery/rafaelmayani-1.png": {
+		"ft": 32768,
+		"iS": 32443,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/rafaelmayani-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/gallery/tim.png": {
+		"ft": 32768,
+		"iS": 205348,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/tim.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home/header-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/home/header-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/loop.png": {
+		"ft": 32768,
+		"iS": 110787,
+		"oA": 0,
+		"oAP": "/deploy/img/home/loop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home/monospace-c.jpg": {
+		"ft": 16384,
+		"iS": 154391,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/monospace-c.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/home/pub.png": {
+		"ft": 32768,
+		"iS": 266146,
+		"oA": 0,
+		"oAP": "/deploy/img/home/pub.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/home/tim.png": {
+		"ft": 32768,
+		"iS": 220632,
+		"oA": 0,
+		"oAP": "/deploy/img/home/tim.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/pattern/black-pattern.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/pattern/black-pattern.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/pattern/grey-pattern.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/pattern/grey-pattern.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/westphal-logo.png": {
+		"ft": 32768,
+		"iS": 242515,
+		"oA": 0,
+		"oAP": "/deploy/img/westphal-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/deploy/index.html": {
 		"cB": 0,
@@ -38,21 +313,53 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/hero.kit": {
+	"/deploy/meet.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/meet.html",
+		"oF": 0
+		},
+	"/deploy/portfolio.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/portfolio.html",
+		"oF": 0
+		},
+	"/dev/about.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/about.html",
+		"oF": 0
+		},
+	"/dev/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/hero.html",
+		"oAP": "/dev/footer.html",
+		"oF": 0
+		},
+	"/dev/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/header.html",
 		"oF": 0
 		},
 	"/dev/index.kit": {
 		"cB": 0,
 		"ft": 2048,
-		"hM": 1,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "/deploy/index.html",
-		"oF": 2
+		"oAP": "/dev/index.html",
+		"oF": 0
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
@@ -64,6 +371,30 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/dev/kit/home/home.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/kit/home/home.html",
+		"oF": 0
+		},
+	"/dev/meet.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/meet.html",
+		"oF": 0
+		},
+	"/dev/portfolio.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/portfolio.html",
+		"oF": 0
 		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
@@ -195,6 +526,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sections/_about.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_about.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_extra.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_extra.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/sections/_home.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -208,6 +565,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sections/_meet.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_meet.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_portfolio.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_portfolio.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -216,8 +599,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/deploy/styles.css",
-		"oF": 2,
+		"oAP": "/dev/scss/styles.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		}

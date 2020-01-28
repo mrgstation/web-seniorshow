@@ -13,3 +13,21 @@ ul{
         list-style: none;
     }
 }
+
+
+.section-content{
+    padding: 60px 20px 60px 20px;
+
+    // @include md{
+    //     padding: 50px 0;
+    // }
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+}
+
+// .date-block{
+//
+// }

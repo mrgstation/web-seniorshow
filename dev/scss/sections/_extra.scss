@@ -1,0 +1,58 @@
+// /* =============
+//     Circle
+// ============= */
+// #circle {
+//     @include xl {
+//         display: grid;
+//         grid-template-areas: ". circle .";
+//         grid-template-columns: auto 1200px auto;
+//     }
+//
+//     > div {
+//         @include xl {
+//             display: grid;
+//             grid-area: circle;
+//             grid-template-columns: 40% auto;
+//         }
+//
+//         aside {
+//             div {
+//                 background-image: url("../img/circle/circle.jpg");
+//                 background-position: center bottom;
+//                 background-size: cover;
+//                 border-radius: 200px;
+//                 height: 300px;
+//                 margin: 0 auto 40px;
+//                 width: 300px;
+//                 @include md {
+//                     border-radius: 300px;
+//                     height: 400px;
+//                     width: 400px;
+//                 }
+//             }
+//         }
+//
+//         section {
+//             display: grid;
+//             grid-template-areas: ". cricle-content .";
+//             grid-template-columns: 20px auto 20px;
+//             @include md {
+//                 grid-template-columns: auto 80% auto;
+//             }
+//
+//             > div {
+//                 grid-area: cricle-content;
+//                 @include xl {
+//                     align-items: center;
+//                     display: flex;
+//                 }
+//
+//                 p {
+//                     font-size: rem-calc(18);
+//                     line-height: rem-calc(30);
+//                     text-align: justify;
+//                 }
+//             }
+//         }
+//     }
+// }

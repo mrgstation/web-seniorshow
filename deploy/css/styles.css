@@ -321,16 +321,102 @@ ul {
   ul li {
     list-style: none; }
 
+.section-content {
+  padding: 60px 20px 60px 20px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4, h5, p {
+body, p {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Syncopate', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase; }
+
+h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2.25rem; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3.1875rem; } }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 5rem; } }
+
+p {
   padding: 0;
   margin: 0; }
 
 /* =============
     Buttons
 ============= */
+button {
+  background-color: #fff;
+  border: 3px #000 solid;
+  color: #000;
+  padding: 18px 15px;
+  text-align: left; }
+
+.button p {
+  font-size: 1.125rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900; }
+
+.button-container {
+  padding: 20px 0 15px 0; }
+
+.button {
+  display: flex; }
+
+.button img {
+  padding-left: 15px;
+  align-content: flex-end; }
+
+button {
+  border: 3px #000 solid;
+  font-size: 1.125rem; }
+
+button:hover {
+  background-color: #FF4242; }
+
+.name-button {
+  width: 42vw;
+  height: 75px; }
+  @media (min-width: 768px) {
+    .name-button {
+      width: 42vw;
+      height: 130px; } }
+
+.name-button-container {
+  padding: 5px 5px 5px 0; }
+
+.name-button p:nth-child(1) {
+  font-size: 1.125rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400; }
+  @media (min-width: 768px) {
+    .name-button p:nth-child(1) {
+      font-size: 1.5rem; } }
+
+.name-button p:nth-child(2) {
+  font-size: 1.125rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900; }
+  @media (min-width: 768px) {
+    .name-button p:nth-child(2) {
+      font-size: 1.5rem; } }
+
+.name-button:hover {
+  background-color: #EFB51D; }
+
 /* =============
     Forms
 ============= */
@@ -352,6 +438,323 @@ textarea {
 /* =============
     Header
 ============= */
+header img {
+  height: 60px; }
+
 /* =============
     Footer
 ============= */
+footer p {
+  font-size: 1rem; }
+
+footer article p:nth-child(1) {
+  font-weight: 700;
+  font-family: 'Syncopate', sans-serif;
+  text-transform: uppercase; }
+
+footer article p:nth-child(2) {
+  font-weight: 300; }
+
+footer article p:nth-child(3) {
+  font-weight: 300; }
+
+footer nav ul li {
+  padding-bottom: 15px; }
+
+footer nav ul li a {
+  color: #000; }
+
+footer ul {
+  padding-bottom: 20px; }
+
+footer #bar {
+  background-color: #000;
+  height: 20px; }
+
+/* =============
+    Home Page
+============= */
+/* =====================================
+    Home Hero Section
+===================================== */
+#home-hero {
+  display: grid;
+  grid-template-columns: 70% 30%; }
+  #home-hero > div {
+    background-image: url("../img/home/monospace-c.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 10vh;
+    justify-content: left;
+    margin-bottom: 70px; }
+    @media (min-width: 768px) {
+      #home-hero > div {
+        background-position: center center; } }
+    @media (min-width: 992px) {
+      #home-hero > div {
+        height: 20vh; } }
+  #home-hero > div img {
+    padding-left: 20px; }
+  #home-hero #w-logo {
+    height: 25px; }
+
+#home-title {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 0px 20px 60px 20px; }
+  #home-title h1 {
+    font-weight: 400;
+    font-size: 2.25rem; }
+    @media (min-width: 768px) {
+      #home-title h1 {
+        font-size: 3.1875rem; } }
+    @media (min-width: 1200px) {
+      #home-title h1 {
+        font-size: 6.25rem; } }
+  #home-title h4 {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 3px; }
+    @media (min-width: 768px) {
+      #home-title h4 {
+        font-size: 1.375rem; } }
+    @media (min-width: 1200px) {
+      #home-title h4 {
+        font-size: 2rem; } }
+  #home-title #date-block {
+    margin-top: 50px; }
+  #home-title > aside {
+    background-color: #FF4242; }
+  #home-title p {
+    font-family: 'Syncopate', sans-serif; }
+  #home-title article p:nth-child(2) {
+    font-weight: 700;
+    font-size: 1.75rem;
+    padding-bottom: 10px; }
+  #home-title article p:nth-child(3) {
+    font-weight: 700;
+    font-size: 0.875rem; }
+  #home-title article p:nth-child(4) {
+    font-weight: 400;
+    font-size: 0.875rem; }
+
+/* =====================================
+    Home Hero CTA Section
+===================================== */
+#home-buttons aside {
+  background-color: #EFB51D;
+  height: 30vh;
+  padding: 0 0 0 20px; }
+  @media (min-width: 768px) {
+    #home-buttons aside {
+      display: grid;
+      grid-template-areas: "preview meet ."; } }
+
+#home-buttons div:nth-child(1) {
+  padding-bottom: 20px;
+  margin-top: -40px; }
+
+/* =====================================
+    Home Award Winning
+===================================== */
+#home-awards #award-left div:nth-child(1) {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/home/loop.png");
+  height: 40vh; }
+
+#home-awards #award-left div:nth-child(2) {
+  visibility: hidden; }
+
+#home-awards #award-right div:nth-child(1) {
+  background-image: url("../img/home/pub.png");
+  background-size: cover;
+  background-position: center;
+  height: 30vh; }
+
+#home-awards #award-right article {
+  padding-top: 30px; }
+
+/* =====================================
+    Home RSVP Callout
+===================================== */
+#home-cta {
+  background-color: #000; }
+  #home-cta h1 {
+    color: #fff;
+    font-size: 1.375rem; }
+
+/* =====================================
+    About Hero Section
+===================================== */
+#about-header > div {
+  background-image: url("../img/pattern/black-pattern.svg");
+  background-size: cover;
+  background-position: center;
+  height: 40vh; }
+
+#about-header .h1w {
+  color: #fff; }
+
+#about-header #date-block {
+  margin-top: 50px;
+  padding: 0 20px; }
+
+#about-header h1 {
+  font-weight: 400;
+  color: #000;
+  font-size: 2.25rem; }
+  @media (min-width: 768px) {
+    #about-header h1 {
+      font-size: 3.1875rem; } }
+  @media (min-width: 1200px) {
+    #about-header h1 {
+      font-size: 6.25rem; } }
+
+#about-header li:nth-child(2) {
+  padding-bottom: 10px; }
+
+#about-header li:nth-child(4) {
+  padding-bottom: 15px; }
+
+#about-header li:nth-child(5) {
+  line-height: 1.5; }
+
+#about-header #about-parking li:nth-child(1) {
+  padding-bottom: 10px; }
+
+#about-header #about-parking li:nth-child(2) {
+  padding-bottom: 10px; }
+
+#about-header #about-parking li:nth-child(3) {
+  padding-bottom: 10px; }
+
+#about-parking div {
+  background-image: url("../img/about/map.png");
+  background-size: cover;
+  background-position: center;
+  height: 40vh; }
+
+#about-cta {
+  background-color: #EFB51D; }
+  #about-cta article {
+    padding-bottom: 40px; }
+  #about-cta h4 {
+    padding-bottom: 10px; }
+  #about-cta h1 {
+    font-size: 1.375rem; }
+  #about-cta form {
+    display: grid;
+    grid-gap: 15px;
+    margin: 30px 0px; }
+  #about-cta form input {
+    width: 96%;
+    border: 2px solid #000;
+    padding: 10px 2%; }
+  #about-cta form textarea {
+    width: 96%;
+    border: 2px solid #000;
+    padding: 10px 2%;
+    height: 100px; }
+  #about-cta form button {
+    transition: 0.25s;
+    border: 2px #000 solid;
+    font-size: 1.250em;
+    background-color: #fff; }
+  #about-cta form button:hover {
+    background-color: #FF4242;
+    cursor: pointer; }
+
+#meet-designers-intro {
+  background-color: #fff;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../img/pattern/grey-pattern.svg");
+  height: 20vh; }
+
+#name-gallery {
+  background-color: #000; }
+
+#name-gallery aside {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+#faculty-list {
+  background-color: #F7F7F7; }
+  @media (min-width: 768px) {
+    #faculty-list {
+      display: grid;
+      grid-template-columns: 30% 70%; } }
+
+#faculty-list li {
+  padding: 2px 0px; }
+
+#portfolio-gallery > div ul {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 30% 30% 30%; }
+  @media (min-width: 768px) {
+    #portfolio-gallery > div ul {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(2, 70vh); } }
+  @media (min-width: 1200px) {
+    #portfolio-gallery > div ul {
+      grid-template-columns: 30% 30% 30%; } }
+  #portfolio-gallery > div ul li {
+    background-position: center;
+    background-size: cover; }
+  #portfolio-gallery > div ul li:nth-child(1) {
+    background-image: url("../img/gallery/rafaelmayani-1.png"); }
+    @media (min-width: 768px) {
+      #portfolio-gallery > div ul li:nth-child(1) {
+        grid-area: g1; } }
+  #portfolio-gallery > div ul li:nth-child(2) {
+    background-image: url("../img/gallery/decision-1.png"); }
+    @media (min-width: 768px) {
+      #portfolio-gallery > div ul li:nth-child(2) {
+        grid-area: g2; } }
+  #portfolio-gallery > div ul li:nth-child(3) {
+    background-image: url("../img/gallery/monospace-3.png"); }
+    @media (min-width: 768px) {
+      #portfolio-gallery > div ul li:nth-child(3) {
+        grid-area: g3; } }
+  #portfolio-gallery > div ul li:nth-child(4) {
+    background-image: url("../img/gallery/energy.png"); }
+    @media (min-width: 768px) {
+      #portfolio-gallery > div ul li:nth-child(4) {
+        grid-area: g3; } }
+  #portfolio-gallery > div ul li:nth-child(5) {
+    background-image: url("../img/gallery/paper-sculpture.png"); }
+    @media (min-width: 768px) {
+      #portfolio-gallery > div ul li:nth-child(5) {
+        grid-area: g3; } }
+  #portfolio-gallery > div ul li:nth-child(6) {
+    background-image: url("../img/gallery/flower-zoom.png"); }
+    @media (min-width: 768px) {
+      #portfolio-gallery > div ul li:nth-child(6) {
+        grid-area: g3; } }
+  #portfolio-gallery > div ul li:nth-child(7) {
+    background-image: url("../img/gallery/magazine.png"); }
+    @media (min-width: 768px) {
+      #portfolio-gallery > div ul li:nth-child(7) {
+        grid-area: g3; } }
+  #portfolio-gallery > div ul li:nth-child(8) {
+    background-image: url("../img/gallery/ny-subway-01.png"); }
+    @media (min-width: 768px) {
+      #portfolio-gallery > div ul li:nth-child(8) {
+        grid-area: g3; } }
+  #portfolio-gallery > div ul li:nth-child(9) {
+    background-image: url("../img/gallery/keetra-7.png"); }
+    @media (min-width: 768px) {
+      #portfolio-gallery > div ul li:nth-child(9) {
+        grid-area: g3; } }
+  #portfolio-gallery > div ul li:nth-child(10) {
+    background-image: url("../img/gallery/gigi-poster_v4.png"); }
+    @media (min-width: 768px) {
+      #portfolio-gallery > div ul li:nth-child(10) {
+        grid-area: g3; } }
+  #portfolio-gallery > div ul li:nth-child(11) {
+    background-image: url("../img/gallery/tim.png"); }
+    @media (min-width: 768px) {
+      #portfolio-gallery > div ul li:nth-child(11) {
+        grid-area: g3; } }

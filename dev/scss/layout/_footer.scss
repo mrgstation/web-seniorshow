@@ -1,3 +1,53 @@
 /* =============
     Footer
 ============= */
+footer {
+    img{
+        // height: 40px;
+        // padding-bottom: 20px;
+    }
+
+    #arrow1{
+        // padding-bottom: 0px;
+    }
+
+    p{
+        font-size: rem-calc(16);
+    }
+
+    article p:nth-child(1){
+        font-weight: 700;
+        font-family: 'Syncopate', sans-serif;
+        text-transform: uppercase;
+    }
+
+    article p:nth-child(2){
+        font-weight: 300;
+    }
+
+    article p:nth-child(3){
+        font-weight: 300;
+    }
+
+    button{
+        // margin: 20px 0px;
+    }
+
+    nav ul li{
+        padding-bottom: 15px;
+    }
+
+    nav ul li a{
+        color: $black;
+    }
+
+    ul{
+        padding-bottom: 20px;
+    }
+
+    #bar{
+        background-color: $black;
+        height: 20px;
+    }
+
+}

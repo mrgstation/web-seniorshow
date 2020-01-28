@@ -1,7 +1,34 @@
 /* =============
     Typography
 ============= */
-h1,h2,h3,h4,h5,p{
+
+body,p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Syncopate', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h1{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: rem-calc(36);
+
+
+    @include md{
+        font-size: rem-calc(51);
+    }
+
+    @include lg{
+        font-size: rem-calc(80);
+    }
+}
+
+p{
     padding: 0;
     margin: 0;
 }

@@ -1,12 +1,195 @@
-#home-hero div{
-    border: red 2px;
-    // background-image: url('../img/heroes/hero.jpg');
-    // background-size: cover;
-    // background-position: center bottom;
-    // height: 90vh;
-    // display: flex;
-    // justify-content: center;
+/* =============
+    Home Page
+============= */
 
-    // @include xl{
-    //     height: 100vh;
+
+/* =====================================
+    Home Hero Section
+===================================== */
+
+#home-hero{
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    >div{
+        background-image: url('../img/home/monospace-c.jpg');
+        background-size: cover;
+        background-position: center center;
+        height: 10vh;
+        // display: flex;
+        justify-content: left;
+        margin-bottom: 70px;
+
+        @include md{
+            // height: 15vh;
+            background-position: center center;
+        }
+        @include lg{
+            height: 20vh;
+        }
     }
+
+    >div img{
+        padding-left: 20px;
+    }
+
+    #w-logo{
+        height: 25px;
+    }
+
+}
+
+
+#home-title{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 0px 20px 60px 20px;
+    // border: 2px blue solid;
+
+    >div{
+        // border: 2px blue solid;
+    }
+    h1{
+        font-weight: 400;
+        font-size: rem-calc(36);
+
+        @include md{
+            font-size: rem-calc(51);
+        }
+
+        @include xl{
+            font-size: rem-calc(100);
+            // margin-top: 10vh;
+        }
+    }
+
+    h4{
+        font-weight: 400;
+        font-size: rem-calc(16);
+        letter-spacing: 3px;
+
+        @include md{
+            font-size: rem-calc(22);
+        }
+
+        @include xl{
+            font-size: rem-calc(32);
+            // margin-top: 10vh;
+        }
+    }
+
+    #date-block{
+        // border: 2px red solid;
+        margin-top: 50px;
+    }
+        >aside{
+            background-color: $red;
+        }
+
+        p{
+            font-family: 'Syncopate', sans-serif;
+        }
+
+    // article div{
+    //     background-color: $red;
+    // }
+
+    article p:nth-child(2){
+        font-weight: 700;
+        font-size: rem-calc(28);
+        padding-bottom: 10px;
+    }
+
+    article p:nth-child(3){
+        font-weight: 700;
+        font-size: rem-calc(14);
+    }
+
+    article p:nth-child(4){
+        font-weight: 400;
+        font-size: rem-calc(14);
+    }
+}
+
+/* =====================================
+    Home Hero CTA Section
+===================================== */
+
+#home-buttons{
+    button:nth-child(1){
+        // margin-top: -50px;
+    }
+
+    aside{
+        background-color: $yellow;
+        height: 30vh;
+        padding: 0 0 0 20px;
+
+        @include md{
+            display: grid;
+            // grid-template-columns: ;
+            grid-template-areas: "preview meet .";
+        }
+
+
+    }
+
+    div:nth-child(1){
+        padding-bottom: 20px;
+        margin-top: -40px;
+    }
+}
+
+/* =====================================
+    Home Award Winning
+===================================== */
+
+#home-awards{
+    // display: grid;
+    // grid-template-columns: 40% 60%;
+
+    #award-left div:nth-child(1){
+        background-position: center;
+        background-size: cover;
+        background-image: url("../img/home/loop.png");
+        height: 40vh;
+    }
+
+    #award-left div:nth-child(2){
+        // background-position: center;
+        // background-size: cover;
+        // background-image: url("../img/home/tim.png");
+        visibility: hidden;
+    }
+
+
+    #award-right div:nth-child(1){
+        background-image: url("../img/home/pub.png");
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+    }
+
+    #award-right article {
+        // padding-top: -70px;
+        padding-top: 30px;
+    }
+
+}
+
+/* =====================================
+    Home RSVP Callout
+===================================== */
+
+#home-cta{
+    // display: flex;
+    background-color: $black;
+    article{
+        // padding-bottom: 35px;
+    }
+    h1{
+        color: $white;
+        font-size: rem-calc(22);
+    }
+
+}
