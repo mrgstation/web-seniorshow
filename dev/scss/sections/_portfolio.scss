@@ -1,128 +1,75 @@
 // /* =============
 //     Galleruy
 // ============= */
-#portfolio-gallery {
-    // @include xl {
-    //     display: grid;
-    //     grid-template-areas: ". gallery .";
-    //     grid-template-columns: auto 1200px auto;
-    // }
 
+#portfolio-gallery-container {
     > div {
-        // @include xl {
-        //     grid-area: gallery;
-        // }
-
         ul {
             display: grid;
             grid-gap: 5px;
-            // grid-template-rows: repeat(3, 10vh);
-            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: repeat(6, 20vh);
+            grid-template-columns: 50% 50%;
             @include md {
-                // grid-template-areas: "g1 g1" "g2 g3";
-                grid-template-columns: 50% 50%;
-                grid-template-rows: repeat(2, 70vh);
+                grid-template-rows: repeat(6, 40vh);
+            }
+            @include lg {
+                grid-template-columns: 30% 30% 30%;
+                grid-template-rows: repeat(4, 50vh);
             }
             @include xl {
-                // grid-template-areas: "g1 g2" "g1 g3";
                 grid-template-columns: 30% 30% 30%;
+                grid-template-rows: repeat(4, 50vh);
             }
 
             li {
                 background-position: center;
                 background-size: cover;
-                // height: 70vh;
             }
 
             li:nth-child(1) {
                 background-image: url("../img/gallery/rafaelmayani-1.png");
-                @include md {
-                    grid-area: g1;
-                }
+                background-position: top;
             }
 
             li:nth-child(2) {
                 background-image: url("../img/gallery/decision-1.png");
-                @include md {
-                    grid-area: g2;
-                    // height: 35vh;
-                }
             }
 
             li:nth-child(3) {
                 background-image: url("../img/gallery/monospace-3.png");
-                @include md {
-                    grid-area: g3;
-                    // height: 35vh;
-                }
             }
 
             li:nth-child(4) {
                 background-image: url("../img/gallery/energy.png");
-                @include md {
-                    grid-area: g3;
-                    // height: 35vh;
-                }
             }
 
             li:nth-child(5) {
                 background-image: url("../img/gallery/paper-sculpture.png");
-                @include md {
-                    grid-area: g3;
-                    // height: 35vh;
-                }
             }
 
             li:nth-child(6) {
                 background-image: url("../img/gallery/flower-zoom.png");
-                @include md {
-                    grid-area: g3;
-                    // height: 35vh;
-                }
             }
 
             li:nth-child(7) {
                 background-image: url("../img/gallery/magazine.png");
-                @include md {
-                    grid-area: g3;
-                    // height: 35vh;
-                }
             }
 
             li:nth-child(8) {
                 background-image: url("../img/gallery/ny-subway-01.png");
-                @include md {
-                    grid-area: g3;
-                    // height: 35vh;
-                }
             }
 
             li:nth-child(9) {
-                background-image: url("../img/gallery/keetra-7.png");
-                @include md {
-                    grid-area: g3;
-                    // height: 35vh;
-                }
+                background-image: url("../img/gallery/keetra7.png");
             }
 
             li:nth-child(10) {
-                background-image: url("../img/gallery/gigi-poster_v4.png");
-                @include md {
-                    grid-area: g3;
-                    // height: 35vh;
-                }
+                background-image: url("../img/gallery/gig-poster_v4.png");
             }
 
             li:nth-child(11) {
                 background-image: url("../img/gallery/tim.png");
-                @include md {
-                    grid-area: g3;
-                    // height: 35vh;
-                }
             }
-
-
-
         }
     }
 }

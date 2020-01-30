@@ -334,8 +334,14 @@ a {
 body, p {
   font-family: 'Source Sans Pro', sans-serif; }
 
-h1, h2, h3, h4, h5 {
+h1, h2 {
   font-family: 'Syncopate', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase; }
+
+h3, h4, h5 {
+  font-family: 'Source Sans Pro', sans-serif;
   padding: 0;
   margin: 0;
   text-transform: uppercase; }
@@ -349,7 +355,18 @@ h1 {
       font-size: 3.1875rem; } }
   @media (min-width: 992px) {
     h1 {
-      font-size: 5rem; } }
+      font-size: 4.375rem; } }
+
+h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.875rem; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.25rem; } }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 2.75rem; } }
 
 p {
   padding: 0;
@@ -380,19 +397,16 @@ button {
   padding-left: 15px;
   align-content: flex-end; }
 
-button {
-  border: 3px #000 solid;
-  font-size: 1.125rem; }
-
 button:hover {
-  background-color: #FF4242; }
+  background-color: #FF4242;
+  cursor: pointer; }
 
 .name-button {
-  width: 42vw;
+  width: 170px;
   height: 75px; }
   @media (min-width: 768px) {
     .name-button {
-      width: 42vw;
+      width: 230px;
       height: 130px; } }
 
 .name-button-container {
@@ -438,14 +452,82 @@ textarea {
 /* =============
     Header
 ============= */
+#header-container {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding: 10px 20px 10px 20px; }
+  @media (min-width: 768px) {
+    #header-container {
+      grid-template-columns: 70% 30%; } }
+
 header img {
-  height: 60px; }
+  height: 45px; }
+  @media (min-width: 768px) {
+    header img {
+      height: 65px; } }
+
+#burger-container {
+  display: flex; }
+
+#burger-container svg {
+  height: 30px;
+  align-self: flex-end; }
+
+#hidden-nav {
+  background-color: #000; }
+
+#hidden-nav ul li p {
+  font-size: 2.25rem;
+  color: #fff;
+  font-family: 'Source Sans Pro';
+  font-weight: 900;
+  padding-bottom: 20px; }
 
 /* =============
     Footer
 ============= */
-footer p {
-  font-size: 1rem; }
+@media (min-width: 768px) {
+  footer #footer-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "footer-left footer-right"; } }
+
+@media (min-width: 992px) {
+  footer #footer-container {
+    grid-template-columns: 40% auto;
+    grid-template-areas: "footer-left footer-right"; } }
+
+@media (min-width: 1200px) {
+  footer #footer-container {
+    grid-template-columns: 30% auto;
+    grid-template-areas: "footer-left footer-right"; } }
+
+@media (min-width: 992px) {
+  footer #footer-container-right {
+    display: grid;
+    grid-template-columns: 60% 40%; } }
+
+@media (min-width: 992px) {
+  footer #footer-2 {
+    padding-top: 70px; } }
+
+@media (min-width: 992px) {
+  footer #footer-3 {
+    display: flex;
+    align-self: flex-end; } }
+
+@media (min-width: 1200px) {
+  footer #footer-3 {
+    align-self: flex-end; } }
+
+footer .westphal-logo {
+  height: 50px; }
+
+footer aside {
+  padding-bottom: 20px; }
+
+footer article p {
+  padding-bottom: 8px; }
 
 footer article p:nth-child(1) {
   font-weight: 700;
@@ -458,16 +540,27 @@ footer article p:nth-child(2) {
 footer article p:nth-child(3) {
   font-weight: 300; }
 
-footer nav ul li {
-  padding-bottom: 15px; }
-
-footer nav ul li a {
-  color: #000; }
-
 footer ul {
-  padding-bottom: 20px; }
+  padding: 20px 0px 50px 0px; }
 
-footer #bar {
+footer li {
+  padding-bottom: 20px;
+  font-size: 1.5rem; }
+  @media (min-width: 768px) {
+    footer li {
+      padding-bottom: 15px;
+      font-size: 1.125rem; } }
+
+footer nav a:link {
+  font-weight: 300; }
+
+footer nav a:hover {
+  border-bottom: 2px #FF4242 solid; }
+
+footer nav a:active {
+  color: #FF4242; }
+
+footer #footer-bar {
   background-color: #000;
   height: 20px; }
 
@@ -591,43 +684,37 @@ footer #bar {
   background-image: url("../img/pattern/black-pattern.svg");
   background-size: cover;
   background-position: center;
-  height: 40vh; }
+  display: grid;
+  grid-template-columns: 80% auto; }
+  @media (min-width: 768px) {
+    #about-header > div {
+      grid-template-columns: 70% auto;
+      height: 50vh; } }
+  @media (min-width: 992px) {
+    #about-header > div {
+      height: 60vh;
+      grid-template-columns: 50% auto;
+      height: 60vh; } }
 
-#about-header .h1w {
+#about-header .h1-white {
   color: #fff; }
 
-#about-header #date-block {
+#about-header aside {
   margin-top: 50px;
   padding: 0 20px; }
 
-#about-header h1 {
-  font-weight: 400;
-  color: #000;
-  font-size: 2.25rem; }
-  @media (min-width: 768px) {
-    #about-header h1 {
-      font-size: 3.1875rem; } }
-  @media (min-width: 1200px) {
-    #about-header h1 {
-      font-size: 6.25rem; } }
+@media (min-width: 768px) {
+  #about-header h1 {
+    font-size: 3.1875rem; } }
 
-#about-header li:nth-child(2) {
-  padding-bottom: 10px; }
+@media (min-width: 1200px) {
+  #about-header h1 {
+    font-size: 6.25rem; } }
 
-#about-header li:nth-child(4) {
-  padding-bottom: 15px; }
-
-#about-header li:nth-child(5) {
-  line-height: 1.5; }
-
-#about-header #about-parking li:nth-child(1) {
-  padding-bottom: 10px; }
-
-#about-header #about-parking li:nth-child(2) {
-  padding-bottom: 10px; }
-
-#about-header #about-parking li:nth-child(3) {
-  padding-bottom: 10px; }
+#about-header #about-info article p:nth-child(2) {
+  font-size: 1.75rem;
+  font-weight: 900;
+  font-family: 'Source Sans Pro'; }
 
 #about-parking div {
   background-image: url("../img/about/map.png");
@@ -635,14 +722,13 @@ footer #bar {
   background-position: center;
   height: 40vh; }
 
+#about-parking p {
+  padding-bottom: 20px; }
+
 #about-cta {
   background-color: #EFB51D; }
   #about-cta article {
     padding-bottom: 40px; }
-  #about-cta h4 {
-    padding-bottom: 10px; }
-  #about-cta h1 {
-    font-size: 1.375rem; }
   #about-cta form {
     display: grid;
     grid-gap: 15px;
@@ -670,7 +756,7 @@ footer #bar {
   background-position: center;
   background-size: contain;
   background-image: url("../img/pattern/grey-pattern.svg");
-  height: 20vh; }
+  height: auto; }
 
 #name-gallery {
   background-color: #000; }
@@ -679,82 +765,59 @@ footer #bar {
   display: grid;
   grid-template-columns: 50% 50%; }
 
-#faculty-list {
+#faculty-list-container {
   background-color: #F7F7F7; }
-  @media (min-width: 768px) {
-    #faculty-list {
-      display: grid;
-      grid-template-columns: 30% 70%; } }
 
-#faculty-list li {
-  padding: 2px 0px; }
+li {
+  padding: 5px 0px;
+  font-size: 1rem; }
 
-#portfolio-gallery > div ul {
+h1 {
+  padding-bottom: 40px; }
+
+@media (min-width: 768px) {
+  #faculty-list {
+    display: grid; } }
+
+#portfolio-gallery-container > div ul {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: 30% 30% 30%; }
+  grid-template-rows: repeat(6, 20vh);
+  grid-template-columns: 50% 50%; }
   @media (min-width: 768px) {
-    #portfolio-gallery > div ul {
-      grid-template-columns: 50% 50%;
-      grid-template-rows: repeat(2, 70vh); } }
+    #portfolio-gallery-container > div ul {
+      grid-template-rows: repeat(6, 40vh); } }
+  @media (min-width: 992px) {
+    #portfolio-gallery-container > div ul {
+      grid-template-columns: 30% 30% 30%;
+      grid-template-rows: repeat(4, 50vh); } }
   @media (min-width: 1200px) {
-    #portfolio-gallery > div ul {
-      grid-template-columns: 30% 30% 30%; } }
-  #portfolio-gallery > div ul li {
+    #portfolio-gallery-container > div ul {
+      grid-template-columns: 30% 30% 30%;
+      grid-template-rows: repeat(4, 50vh); } }
+  #portfolio-gallery-container > div ul li {
     background-position: center;
     background-size: cover; }
-  #portfolio-gallery > div ul li:nth-child(1) {
-    background-image: url("../img/gallery/rafaelmayani-1.png"); }
-    @media (min-width: 768px) {
-      #portfolio-gallery > div ul li:nth-child(1) {
-        grid-area: g1; } }
-  #portfolio-gallery > div ul li:nth-child(2) {
+  #portfolio-gallery-container > div ul li:nth-child(1) {
+    background-image: url("../img/gallery/rafaelmayani-1.png");
+    background-position: top; }
+  #portfolio-gallery-container > div ul li:nth-child(2) {
     background-image: url("../img/gallery/decision-1.png"); }
-    @media (min-width: 768px) {
-      #portfolio-gallery > div ul li:nth-child(2) {
-        grid-area: g2; } }
-  #portfolio-gallery > div ul li:nth-child(3) {
+  #portfolio-gallery-container > div ul li:nth-child(3) {
     background-image: url("../img/gallery/monospace-3.png"); }
-    @media (min-width: 768px) {
-      #portfolio-gallery > div ul li:nth-child(3) {
-        grid-area: g3; } }
-  #portfolio-gallery > div ul li:nth-child(4) {
+  #portfolio-gallery-container > div ul li:nth-child(4) {
     background-image: url("../img/gallery/energy.png"); }
-    @media (min-width: 768px) {
-      #portfolio-gallery > div ul li:nth-child(4) {
-        grid-area: g3; } }
-  #portfolio-gallery > div ul li:nth-child(5) {
+  #portfolio-gallery-container > div ul li:nth-child(5) {
     background-image: url("../img/gallery/paper-sculpture.png"); }
-    @media (min-width: 768px) {
-      #portfolio-gallery > div ul li:nth-child(5) {
-        grid-area: g3; } }
-  #portfolio-gallery > div ul li:nth-child(6) {
+  #portfolio-gallery-container > div ul li:nth-child(6) {
     background-image: url("../img/gallery/flower-zoom.png"); }
-    @media (min-width: 768px) {
-      #portfolio-gallery > div ul li:nth-child(6) {
-        grid-area: g3; } }
-  #portfolio-gallery > div ul li:nth-child(7) {
+  #portfolio-gallery-container > div ul li:nth-child(7) {
     background-image: url("../img/gallery/magazine.png"); }
-    @media (min-width: 768px) {
-      #portfolio-gallery > div ul li:nth-child(7) {
-        grid-area: g3; } }
-  #portfolio-gallery > div ul li:nth-child(8) {
+  #portfolio-gallery-container > div ul li:nth-child(8) {
     background-image: url("../img/gallery/ny-subway-01.png"); }
-    @media (min-width: 768px) {
-      #portfolio-gallery > div ul li:nth-child(8) {
-        grid-area: g3; } }
-  #portfolio-gallery > div ul li:nth-child(9) {
-    background-image: url("../img/gallery/keetra-7.png"); }
-    @media (min-width: 768px) {
-      #portfolio-gallery > div ul li:nth-child(9) {
-        grid-area: g3; } }
-  #portfolio-gallery > div ul li:nth-child(10) {
-    background-image: url("../img/gallery/gigi-poster_v4.png"); }
-    @media (min-width: 768px) {
-      #portfolio-gallery > div ul li:nth-child(10) {
-        grid-area: g3; } }
-  #portfolio-gallery > div ul li:nth-child(11) {
+  #portfolio-gallery-container > div ul li:nth-child(9) {
+    background-image: url("../img/gallery/keetra7.png"); }
+  #portfolio-gallery-container > div ul li:nth-child(10) {
+    background-image: url("../img/gallery/gig-poster_v4.png"); }
+  #portfolio-gallery-container > div ul li:nth-child(11) {
     background-image: url("../img/gallery/tim.png"); }
-    @media (min-width: 768px) {
-      #portfolio-gallery > div ul li:nth-child(11) {
-        grid-area: g3; } }

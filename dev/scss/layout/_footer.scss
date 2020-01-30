@@ -2,17 +2,66 @@
     Footer
 ============= */
 footer {
-    img{
-        // height: 40px;
-        // padding-bottom: 20px;
+
+    #footer-container{
+        @include md{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-areas: "footer-left footer-right";
+        }
+
+        @include lg{
+            grid-template-columns: 40% auto;
+            grid-template-areas: "footer-left footer-right";
+        }
+
+        @include xl{
+            grid-template-columns: 30% auto;
+            grid-template-areas: "footer-left footer-right";
+        }
+
     }
 
-    #arrow1{
-        // padding-bottom: 0px;
+    #footer-container-right{
+        @include lg{
+            display: grid;
+            grid-template-columns: 60% 40%;
+        }
     }
 
-    p{
-        font-size: rem-calc(16);
+    #footer-2{
+        @include lg{
+            padding-top: 70px;
+        }
+    }
+    #footer-3{
+        @include lg{
+            display: flex;
+            align-self: flex-end;
+        }
+
+        @include xl{
+            align-self: flex-end;
+        }
+    }
+
+    // Logos ==========================
+    .westphal-logo{
+        height: 50px;
+    }
+
+    // .2020-footer{
+    //     height: 10px;
+    // }
+
+    aside{
+        padding-bottom: 20px;
+    }
+
+
+    // Event info ==========================
+    article p{
+        padding-bottom: 8px;
     }
 
     article p:nth-child(1){
@@ -29,23 +78,42 @@ footer {
         font-weight: 300;
     }
 
-    button{
-        // margin: 20px 0px;
-    }
 
-    nav ul li{
-        padding-bottom: 15px;
-    }
 
-    nav ul li a{
-        color: $black;
-    }
+    // RSVP ==========================
 
+
+    // Links ==========================
     ul{
-        padding-bottom: 20px;
+        padding: 20px 0px 50px 0px;
     }
 
-    #bar{
+        li{
+            padding-bottom: 20px;
+            font-size: rem-calc(24);
+
+                @include md{
+                    padding-bottom: 15px;
+                    font-size: rem-calc(18);
+                }
+
+        }
+
+        nav a:link{
+            font-weight: 300;
+        }
+        nav a:hover{
+            border-bottom: 2px $red solid;
+        }
+
+        nav a:active{
+            color: $red;
+        }
+
+
+
+    // Footer Bar =========================
+    #footer-bar{
         background-color: $black;
         height: 20px;
     }

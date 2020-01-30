@@ -24,39 +24,48 @@ button{
 
 .button{
     display: flex;
-    // justify-content: center;
-    // align-content: center;
 }
 
 .button img{
     padding-left: 15px;
-    // padding: 0px;
     align-content: flex-end;
-}
-
-
-button{
-    border: 3px $black solid;
-    font-size: rem-calc(18);
-    // padding: 8px 30px;
 }
 
 button:hover {
     background-color: $red;
+    cursor: pointer;
 }
 
 
 // Bio Buttons---------.
+// .name-button{
+//     width: 42vw;
+//     height: 75px;
+//
+//     @include md{
+//         width: 42vw;
+//         height: 130px;
+//     }
+//
+//     @include lg{
+//
+//     }
+// }
+
 .name-button{
-    width: 42vw;
+    width: 170px;
     height: 75px;
 
     @include md{
-        width: 42vw;
+        width: 230px;
         height: 130px;
     }
-}
 
+    @include lg{
+
+    }
+
+}
 .name-button-container{
     padding: 5px 5px 5px 0;
 }

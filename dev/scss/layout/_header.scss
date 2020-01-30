@@ -2,10 +2,46 @@
     Header
 ============= */
 
-header img{
-    height: 60px;
+#header-container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 10px 20px 10px 20px;
+
+
+    @include md{
+        grid-template-columns: 70% 30%;
+    }
 }
 
-// header{
-//     display: flex;
-// }
+
+header img{
+    height: 45px;
+
+    @include md{
+        height: 65px;
+    }
+
+}
+
+#burger-container{
+    display: flex;
+}
+
+#burger-container svg{
+    height: 30px;
+    align-self: flex-end;
+
+}
+
+
+#hidden-nav{
+    background-color: $black;
+}
+
+    #hidden-nav ul li p{
+        font-size: rem-calc(36px);
+        color: $white;
+        font-family: 'Source Sans Pro';
+        font-weight: 900;
+        padding-bottom: 20px;
+    }

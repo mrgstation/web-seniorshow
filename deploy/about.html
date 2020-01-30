@@ -16,31 +16,66 @@
 
 <body>
     <header>
-        <div class="">
-        </div>
     
-        <!-- <a href="index.html"><img src="img/home/header-logo.svg" alt="Westphal logo"></a> -->
-        <img src="img/westphal-logo.png" alt="Westphal logo">
+        <section id="header-container">
+            <a href="index.html"><img src="img/logos/2020-header.svg" alt="Westphal logo"></a>
+            <div id="burger-container">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 121 46" xml:space="preserve">
+                    <style>
+                        .st1 {
+                            fill: none;
+                            stroke: #ff4242;
+                            stroke-width: 3
+                        }
+                    </style>
+                    <g id="menu">
+                        <path id="m-letter" d="M19.3 45s0-11.7.1-15.8L15 45h-4.6L6.1 29.2c.1 2.9.1 15.8.1 15.8H1V23.8h7.7l4 14.8 3.9-14.8h7.7V45h-5z" />
+                        <path id="e-letter" d="M29.8 23.8h15.7v4.1H35.1v3.8h9.7v4h-9.7v5h11.3V45H29.8V23.8z" />
+                        <path id="n-letter" d="M63 45l-7.5-12.7V45h-5.1V23.8h5.2l7.5 12.9V23.8h5.1V45H63z" />
+                        <path id="u-letter" d="M91.5 36.6c0 5.3-3.4 8.9-9.1 8.9-5 0-9-2.6-9-8.5V23.8h5.3v13.8c0 2.8 1.4 3.5 3.8 3.5 2.7 0 3.6-1.4 3.6-3.8V23.8h5.3v12.8z" />
+                        </g>
+                        <g id="plus">
+                            <path id="horizontal-line" class="st1" d="M121 14.5H92" />
+                            <path id="vertical-line" class="st1" d="M106.2 0v29" />
+                        </g>
+                </svg>
+            </div>
+        </section>
+    
+        <!-- <section id="hidden-nav" class="section-content">
+            <nav>
+                <ul>
+                    <li><p>Home</p></li>
+                    <li><p>About the show</p></li>
+                    <li><p>Preview the show</p></li>
+                    <li><p>Meet the designers</p></li>
+                </ul>
+            </nav>
+        </section> -->
+    
     </header>
     
 
     <section id="about-header">
-
-            <div>
-                <div class="section-content">
-                    <h1 class="h1w">About the show</h1>
-                    <div class="button-container">
-                        <button type="button" name="button-inverted" class="button">
-                            <a href="#scroll-rsvp"><p>RSVP</p></a>
-                            <img src="img/button-arrow.svg" alt="">
-                        </button>
-                    </div>
+        <div>
+            <div class="section-content">
+                <h1 class="h1-white">About the show</h1>
+                <div class="button-container">
+                    <button type="button" name="button-inverted" class="button">
+                        <a href="#about-cta"><p>RSVP</p></a>
+                        <img src="img/button/button-arrow.svg" alt="Right pointing arrow">
+                    </button>
                 </div>
             </div>
+        </div>
 
-            <aside id="date-block">
+
+            <!-- <div class="red-circle">
+                circle
+            </div> -->
+
+            <aside id="about-info">
                 <article>
-                    <!-- <aside class="circle"></aside> -->
                     <h1>13</h1>
                     <p>JUNE</p>
                     <p>6-9 PM<p>
@@ -48,25 +83,21 @@
                 </article>
             </aside>
 
-            <ul class="section-content">
-                <li><h4>6–7:30 PM</h4></li>
-                <li><p>Industry Reception</p></li>
-                <li><h4>7:30–9 PM</h4></li>
-                <li><p>Family, Alumni, and General Public</p></li>
-                <li><p>Join us on Thursday, June 13th for the 2020 Graphic Design Senior Show. The senior class will exhibit projects that showcase the versatility and talent of our students. Highlights include senior capstone projects, book design, packaging, publication design, web design, wayfinding, exhibition design, and motion graphics.</p></li>
-            </ul>
+            <article class="section-content">
+                <h4>6–7:30 PM</h4>
+                <p>Industry Reception</p>
+                <h4>7:30–9 PM</h4>
+                <p>Family, Alumni, and General Public</p>
+                <p>Join us on Thursday, June 13th for the 2020 Graphic Design Senior Show. The senior class will exhibit projects that showcase the versatility and talent of our students. Highlights include senior capstone projects, book design, packaging, publication design, web design, wayfinding, exhibition design, and motion graphics.</p>
+            </article>
         </div>
     </section>
 
-    <section id="#about-parking">
-        <ul class="section-content">
-            <li><h4>Parking Information</h4></li>
-            <li><p>Parking is available across from the URBN Annex as well as on the the block of Market and 34th.
-            For more information regarding rates and options, visit Drexel’s parking page at drexel.edu/business-services/parking/daily-parking/.</p></li>
-            <li><h4>Questions?</h4></li>
-            <li><p>Family, Alumni, and General Public</p></li>
-            <li><p>For further information about the show please contact Jody Graff at jlg36@drexel.edu.</p></li>
-        </ul>
+    <section id="#about-parking" class="section-content">
+        <h4>Parking Information</h4>
+        <p>Parking is available across from the URBN Annex as well as on the the block of Market and 34th.<br>For more information regarding rates and options, visit <a href="https://drexel.edu/business-services/parking/daily-parking/">drexel.edu/business-services/parking.</a></p>
+        <h4>Questions?</h4>
+        <p>For further information about the show please contact Jody Graff at jlg36@drexel.edu.</p>
         <div>
             <!-- Map -->
         </div>
@@ -74,13 +105,13 @@
 
     <section id="about-cta" class="section-content">
         <article>
-            <h1>Let us know you're coming. We'll save you a seat.</h1>
+            <h2>Let us know you're coming. We'll save you a seat.</h2>
             <p>Just kidding, you have to stand. (Seriously though.)</p>
         </article>
 
         <form action="https://formspree.io/margaret.zrs@gmail.com" method="POST">
-            <h4>Your name</h4>
             <div>
+                <h4>Your name</h4>
                 <label>
                     <input type="text" placeholder="Type your name" name="Type your name">
                     <input type="text" name="_gotcha" style="display:none">
@@ -95,42 +126,52 @@
                 </label>
             </div>
 
-            <button type="submit" name="button-inverted" class="button">
+            <button type="submit" name="button" class="button">
                 <p>Save my spot</p>
             </button>
         </form>
     </section>
 
     <footer>
-        <div class="section-content">
-            <a href="index.html"><img src="img/20-logo-mini.svg" alt="2020 Logo"></a>
+        <div class="section-content" id="footer-container">
+            <div id="footer-1">
+                <aside>
+                    <a href="index.html"><img src="img/20-logo-mini.svg" alt="2020 Logo" class="2020-footer"></a>
+                </aside>
     
-            <article class="date-block">
-                <p>June 9, 2020 | 6–9 PM</p>
-                <p>URBN Annex, Leonard Pearlstein Gallery</p>
-                <p>3401 Filbert Street Philadelphia, PA 19104</p>
-            </article>
+                <article>
+                    <p>June 9, 2020 | 6–9 PM</p>
+                    <p>URBN Annex, Leonard Pearlstein Gallery</p>
+                    <p>3401 Filbert Street Philadelphia, PA 19104</p>
+                </article>
     
-            <div class="button-container">
-                <button type="button" name="button-inverted" class="button">
-                    <p>RSVP</p>
-                    <img id="arrow1" src="img/button-arrow.svg" alt="">
-                </button>
+                <div class="button-container">
+                    <button type="button" name="button" class="button">
+                        <p>RSVP</p>
+                        <img src="img/button/button-arrow.svg">
+                    </button>
+                </div>
             </div>
     
-            <nav>
-                <ul>
-                    <li><a id="nav-about" class="" href="about.html">About the show</a></li>
-                    <li><a class="" href="portfolio.html">Preview the projects</a></li>
-                    <li><a class="" href="meet.html">Meet the designers</a></li>
-                </ul>
-                <img src="img/westphal-logo.png" alt="Westphal logo">
-            </nav>
+            <div id="footer-container-right">
+                <nav id="footer-2">
+                    <ul>
+                        <li><a class="" href="about.html">About the show</a></li>
+                        <li><a class="" href="portfolio.html">Preview the projects</a></li>
+                        <li><a class="" href="meet.html">Meet the designers</a></li>
+                    </ul>
+                </nav>
+                <div id=footer-3>
+                    <a href="https://drexel.edu/westphal/"><img src="img/westphal-logo.png" alt="Westphal logo" class="westphal-logo"></a>
+                </div>
+            </div>
+    
+    
+    
     
         </div>
     
-        <div id="bar">
-        </div>
+        <div id="footer-bar"></div>
     
     </footer>
     
@@ -141,6 +182,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
 
     <script src="js/scripts-min.js"></script>
+    <script src="js/DrawSVGPlugin.js"></script>
+
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 // /* =============
-//     Everything
+//     Name Gallery
 // ============= */
 
 #meet-designers-intro{
@@ -7,7 +7,7 @@
     background-position: center;
     background-size: contain;
     background-image: url("../img/pattern/grey-pattern.svg");
-    height: 20vh;
+    height: auto;
 }
 
 #name-gallery{
@@ -16,19 +16,56 @@
 
 #name-gallery aside{
     display: grid;
-    // grid-gap: 5px;
     grid-template-columns: 50% 50%;
-}
-
-#faculty-list{
-    background-color: #F7F7F7;
 
     @include md{
-        display: grid;
-        grid-template-columns: 30% 70%;
+        // grid-template-columns: 200px 200px 200px;
     }
 }
 
-#faculty-list li{
-    padding: 2px 0px;
+
+// /* =============
+//     Designer Feature
+// ============= */
+
+
+
+
+
+
+// Faculty
+
+#faculty-list-container{
+    background-color: #F7F7F7;
+}
+    li{
+        padding: 5px 0px;
+        font-size: rem-calc(16);
+    }
+
+    h1{
+        padding-bottom: 40px;
+    }
+
+
+#faculty-list{
+    @include md{
+        display: grid;
+        // grid-template-columns: 50% 25% 25%;
+        // grid-template-rows: repeat(2, 50vh);
+        // grid-template-areas: "t1 . .
+        // b1 b2 b3"
+    }
+
+    // ul:nth-child(1){
+    //     grid-area: b1;
+    // }
+    //
+    // ul:nth-child(2){
+    //     grid-area: b2;
+    // }
+    //
+    // ul:nth-child(1){
+    //     grid-area: b3;
+    // }
 }

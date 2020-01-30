@@ -3,30 +3,37 @@
 ===================================== */
 
 #about-header{
-    // @include md{
-    //     display: grid;
-    // }
 
     >div{
         background-image: url("../img/pattern/black-pattern.svg");
         background-size: cover;
         background-position: center;
-        height: 40vh;
+        // height: auto;
+        display: grid;
+        grid-template-columns: 80% auto;
+
+        @include md{
+            grid-template-columns: 70% auto;
+            height: 50vh;
+
+        }
+        @include lg{
+            height: 60vh;
+            grid-template-columns: 50% auto;
+            height: 60vh;
+        }
     }
 
-    .h1w{
+    .h1-white{
         color: $white;
     }
-    #date-block{
+
+    aside{
         margin-top: 50px;
         padding: 0 20px;
     }
 
         h1{
-            font-weight: 400;
-            color: $black;
-            font-size: rem-calc(36);
-
             @include md{
                 font-size: rem-calc(51);
             }
@@ -37,39 +44,31 @@
             }
         }
 
-    li:nth-child(2){
-        padding-bottom: 10px;
-    }
-
-    li:nth-child(4){
-        padding-bottom: 15px;
-    }
-
-    li:nth-child(5){
-        line-height: 1.5;
-    }
-
-    #about-parking li:nth-child(1){
-        padding-bottom: 10px;
-    }
-
-    #about-parking li:nth-child(2){
-            padding-bottom: 10px;
+        #about-info article p:nth-child(2){
+            font-size: rem-calc(28);
+            font-weight: 900;
+            font-family: 'Source Sans Pro';
         }
 
-
-    #about-parking li:nth-child(3){
-        padding-bottom: 10px;
-    }
 }
 
 #about-parking{
+
+    // why can't I adjust padding manually
+    // #parking-copy-container aside article{
+    //     padding: 0px 20px 40px 20px;
+    // }
+
     div{
         background-image: url("../img/about/map.png");
         background-size: cover;
         background-position: center;
         height: 40vh;
     }
+
+        p{
+            padding-bottom: 20px;
+        }
 }
 
 #about-cta{
@@ -78,13 +77,6 @@
 
     article{
         padding-bottom: 40px;
-    }
-
-    h4{
-        padding-bottom: 10px;
-    }
-    h1{
-        font-size: rem-calc(22);
     }
 
     form {

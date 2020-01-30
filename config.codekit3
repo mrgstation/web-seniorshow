@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "5BD5584A-1D98-4AE2-8F7B-9738C9A288F5"
+		"uuidString": "7241AFB2-1C8D-47FE-BD30-23EB22454C88"
 		}
 	],
 "creatorBuild": "31934",
@@ -68,11 +68,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/button-arrow.svg": {
+	"/deploy/img/button/button-arrow.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/deploy/img/button-arrow.svg",
+		"oAP": "/deploy/img/button/button-arrow.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -263,6 +263,26 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/logos/2020-header.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/logos/2020-header.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/menu/menu.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/menu/menu.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/pattern/black-pattern.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -302,6 +322,17 @@
 		"oAP": "/deploy/index.html",
 		"oF": 0
 		},
+	"/deploy/js/DrawSVGPlugin.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/deploy/js/DrawSVGPlugin-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/deploy/js/scripts-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -334,8 +365,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/about.html",
-		"oF": 0
+		"oAP": "/deploy/about.html",
+		"oF": 3
 		},
 	"/dev/footer.kit": {
 		"cB": 0,
@@ -358,8 +389,63 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/index.html",
-		"oF": 0
+		"oAP": "/deploy/index.html",
+		"oF": 2
+		},
+	"/dev/js/menu/menu.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/menu/menu-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/menu/mouse-click.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/menu/mouse-click-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/menu/mouse-enter.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/menu/mouse-enter-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/menu/mouse-leave-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dev/js/menu/mouse-leave-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/menu/mouse-leave.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/menu/mouse-leave-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
@@ -367,8 +453,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/dev/js/scripts-min.js",
-		"oF": 0,
+		"oAP": "/deploy/js/scripts-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -385,16 +471,16 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/meet.html",
-		"oF": 0
+		"oAP": "/deploy/meet.html",
+		"oF": 2
 		},
 	"/dev/portfolio.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/portfolio.html",
-		"oF": 0
+		"oAP": "/deploy/portfolio.html",
+		"oF": 3
 		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
@@ -599,8 +685,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/dev/scss/styles.css",
-		"oF": 0,
+		"oAP": "/deploy/css/styles.css",
+		"oF": 2,
 		"oS": 0,
 		"uL": 1
 		}
@@ -610,10 +696,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 600886340.66216803,
-	"displayValue": "web-seniorshow",
-	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets-ucla",
+	"creationDate": 600274454.99399805,
+	"displayValue": "Senior Show v2 Local",
+	"displayValueWasSetByUser": 1,
+	"iconImageName": "brackets-payne",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
@@ -1052,7 +1138,7 @@
 	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 1,
+	"esLintEnvironmentsMask": 8193,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -1375,7 +1461,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -2095,7 +2181,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "gsap, DrawSVG.plugin",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

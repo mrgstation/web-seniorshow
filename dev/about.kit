@@ -18,22 +18,25 @@
     <!-- @import "header.kit" -->
 
     <section id="about-header">
-
-            <div>
-                <div class="section-content">
-                    <h1 class="h1w">About the show</h1>
-                    <div class="button-container">
-                        <button type="button" name="button-inverted" class="button">
-                            <a href="#scroll-rsvp"><p>RSVP</p></a>
-                            <img src="img/button-arrow.svg" alt="">
-                        </button>
-                    </div>
+        <div>
+            <div class="section-content">
+                <h1 class="h1-white">About the show</h1>
+                <div class="button-container">
+                    <button type="button" name="button-inverted" class="button">
+                        <a href="#about-cta"><p>RSVP</p></a>
+                        <img src="img/button/button-arrow.svg" alt="Right pointing arrow">
+                    </button>
                 </div>
             </div>
+        </div>
 
-            <aside id="date-block">
+
+            <!-- <div class="red-circle">
+                circle
+            </div> -->
+
+            <aside id="about-info">
                 <article>
-                    <!-- <aside class="circle"></aside> -->
                     <h1>13</h1>
                     <p>JUNE</p>
                     <p>6-9 PM<p>
@@ -41,25 +44,21 @@
                 </article>
             </aside>
 
-            <ul class="section-content">
-                <li><h4>6–7:30 PM</h4></li>
-                <li><p>Industry Reception</p></li>
-                <li><h4>7:30–9 PM</h4></li>
-                <li><p>Family, Alumni, and General Public</p></li>
-                <li><p>Join us on Thursday, June 13th for the 2020 Graphic Design Senior Show. The senior class will exhibit projects that showcase the versatility and talent of our students. Highlights include senior capstone projects, book design, packaging, publication design, web design, wayfinding, exhibition design, and motion graphics.</p></li>
-            </ul>
+            <article class="section-content">
+                <h4>6–7:30 PM</h4>
+                <p>Industry Reception</p>
+                <h4>7:30–9 PM</h4>
+                <p>Family, Alumni, and General Public</p>
+                <p>Join us on Thursday, June 13th for the 2020 Graphic Design Senior Show. The senior class will exhibit projects that showcase the versatility and talent of our students. Highlights include senior capstone projects, book design, packaging, publication design, web design, wayfinding, exhibition design, and motion graphics.</p>
+            </article>
         </div>
     </section>
 
-    <section id="#about-parking">
-        <ul class="section-content">
-            <li><h4>Parking Information</h4></li>
-            <li><p>Parking is available across from the URBN Annex as well as on the the block of Market and 34th.
-            For more information regarding rates and options, visit Drexel’s parking page at drexel.edu/business-services/parking/daily-parking/.</p></li>
-            <li><h4>Questions?</h4></li>
-            <li><p>Family, Alumni, and General Public</p></li>
-            <li><p>For further information about the show please contact Jody Graff at jlg36@drexel.edu.</p></li>
-        </ul>
+    <section id="#about-parking" class="section-content">
+        <h4>Parking Information</h4>
+        <p>Parking is available across from the URBN Annex as well as on the the block of Market and 34th.<br>For more information regarding rates and options, visit <a href="https://drexel.edu/business-services/parking/daily-parking/">drexel.edu/business-services/parking.</a></p>
+        <h4>Questions?</h4>
+        <p>For further information about the show please contact Jody Graff at jlg36@drexel.edu.</p>
         <div>
             <!-- Map -->
         </div>
@@ -67,13 +66,13 @@
 
     <section id="about-cta" class="section-content">
         <article>
-            <h1>Let us know you're coming. We'll save you a seat.</h1>
+            <h2>Let us know you're coming. We'll save you a seat.</h2>
             <p>Just kidding, you have to stand. (Seriously though.)</p>
         </article>
 
         <form action="https://formspree.io/margaret.zrs@gmail.com" method="POST">
-            <h4>Your name</h4>
             <div>
+                <h4>Your name</h4>
                 <label>
                     <input type="text" placeholder="Type your name" name="Type your name">
                     <input type="text" name="_gotcha" style="display:none">
@@ -88,7 +87,7 @@
                 </label>
             </div>
 
-            <button type="submit" name="button-inverted" class="button">
+            <button type="submit" name="button" class="button">
                 <p>Save my spot</p>
             </button>
         </form>
@@ -102,6 +101,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
 
     <script src="js/scripts-min.js"></script>
+    <script src="js/DrawSVGPlugin.js"></script>
+
 </body>
 
 </html>
