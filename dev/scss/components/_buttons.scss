@@ -24,6 +24,7 @@ button{
 
 .button{
     display: flex;
+    
 }
 
 .button img{
@@ -37,60 +38,46 @@ button:hover {
 }
 
 
-// Bio Buttons---------.
-// .name-button{
-//     width: 42vw;
-//     height: 75px;
-//
-//     @include md{
-//         width: 42vw;
-//         height: 130px;
-//     }
-//
-//     @include lg{
-//
-//     }
-// }
+// Bio Buttons================================
 
 .name-button{
-    width: 170px;
-    height: 75px;
+    // height: 75px;
+    // width: 160px;
+    width: 40vw;
+    height: auto;
+    border: none;
 
     @include md{
-        width: 230px;
+        width: 25vw;
         height: 130px;
     }
 
     @include lg{
-
+        width: 20vw;
     }
 
-}
-.name-button-container{
-    padding: 5px 5px 5px 0;
+    @include xl{
+        width: 15vw;
+    }
+
+    p{
+        font-size: rem-calc(18);
+        font-family: 'Source Sans Pro', sans-serif;
+        @include md{
+            font-size: rem-calc(24);
+        }
+    }
+
 }
 
 .name-button p:nth-child(1){
-    font-size: rem-calc(18);
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-
-    @include md{
-        font-size: rem-calc(24);
-    }
 }
 
 .name-button p:nth-child(2){
-    font-size: rem-calc(18);
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
-
-    @include md{
-        font-size: rem-calc(24);
-    }
 }
 
 .name-button:hover{
     background-color: $yellow;
-
 }

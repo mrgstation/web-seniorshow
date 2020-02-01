@@ -322,7 +322,7 @@ ul {
     list-style: none; }
 
 .section-content {
-  padding: 60px 20px 60px 20px; }
+  padding: 30px 20px 30px 20px; }
 
 a {
   text-decoration: none;
@@ -372,6 +372,9 @@ p {
   padding: 0;
   margin: 0; }
 
+.h1w {
+  color: #fff; }
+
 /* =============
     Buttons
 ============= */
@@ -402,31 +405,31 @@ button:hover {
   cursor: pointer; }
 
 .name-button {
-  width: 170px;
-  height: 75px; }
+  width: 40vw;
+  height: auto;
+  border: none; }
   @media (min-width: 768px) {
     .name-button {
-      width: 230px;
+      width: 25vw;
       height: 130px; } }
-
-.name-button-container {
-  padding: 5px 5px 5px 0; }
+  @media (min-width: 992px) {
+    .name-button {
+      width: 20vw; } }
+  @media (min-width: 1200px) {
+    .name-button {
+      width: 15vw; } }
+  .name-button p {
+    font-size: 1.125rem;
+    font-family: 'Source Sans Pro', sans-serif; }
+    @media (min-width: 768px) {
+      .name-button p {
+        font-size: 1.5rem; } }
 
 .name-button p:nth-child(1) {
-  font-size: 1.125rem;
-  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400; }
-  @media (min-width: 768px) {
-    .name-button p:nth-child(1) {
-      font-size: 1.5rem; } }
 
 .name-button p:nth-child(2) {
-  font-size: 1.125rem;
-  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900; }
-  @media (min-width: 768px) {
-    .name-button p:nth-child(2) {
-      font-size: 1.5rem; } }
 
 .name-button:hover {
   background-color: #EFB51D; }
@@ -570,31 +573,13 @@ footer #footer-bar {
 /* =====================================
     Home Hero Section
 ===================================== */
-#home-hero {
-  display: grid;
-  grid-template-columns: 70% 30%; }
-  #home-hero > div {
-    background-image: url("../img/home/monospace-c.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 10vh;
-    justify-content: left;
-    margin-bottom: 70px; }
-    @media (min-width: 768px) {
-      #home-hero > div {
-        background-position: center center; } }
-    @media (min-width: 992px) {
-      #home-hero > div {
-        height: 20vh; } }
-  #home-hero > div img {
-    padding-left: 20px; }
-  #home-hero #w-logo {
-    height: 25px; }
+#home-hero > div img {
+  padding-left: 20px; }
 
 #home-title {
   display: grid;
   grid-template-columns: 70% 30%;
-  padding: 0px 20px 60px 20px; }
+  padding: 0 20px 60px; }
   #home-title h1 {
     font-weight: 400;
     font-size: 2.25rem; }
@@ -615,9 +600,17 @@ footer #footer-bar {
       #home-title h4 {
         font-size: 2rem; } }
   #home-title #date-block {
-    margin-top: 50px; }
-  #home-title > aside {
-    background-color: #FF4242; }
+    margin-top: 50px;
+    position: relative; }
+  #home-title #circle {
+    background-color: #FF4242;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    left: -30px;
+    top: -20px;
+    position: absolute;
+    z-index: -10; }
   #home-title p {
     font-family: 'Syncopate', sans-serif; }
   #home-title article p:nth-child(2) {
@@ -634,39 +627,39 @@ footer #footer-bar {
 /* =====================================
     Home Hero CTA Section
 ===================================== */
-#home-buttons aside {
-  background-color: #EFB51D;
-  height: 30vh;
-  padding: 0 0 0 20px; }
-  @media (min-width: 768px) {
-    #home-buttons aside {
-      display: grid;
-      grid-template-areas: "preview meet ."; } }
-
-#home-buttons div:nth-child(1) {
-  padding-bottom: 20px;
-  margin-top: -40px; }
+#home-options {
+  background-color: #EFB51D; }
+  #home-options aside {
+    display: grid;
+    padding: 10px 20px; }
+    @media (min-width: 768px) {
+      #home-options aside {
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "preview meet ."; } }
 
 /* =====================================
     Home Award Winning
 ===================================== */
-#home-awards #award-left div:nth-child(1) {
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/home/loop.png");
-  height: 40vh; }
-
-#home-awards #award-left div:nth-child(2) {
-  visibility: hidden; }
-
-#home-awards #award-right div:nth-child(1) {
-  background-image: url("../img/home/pub.png");
-  background-size: cover;
-  background-position: center;
-  height: 30vh; }
-
-#home-awards #award-right article {
-  padding-top: 30px; }
+#home-awards {
+  display: grid;
+  grid-gap: 20px; }
+  #home-awards #award-left div:nth-child(1) {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/home/loop.png");
+    height: 40vh; }
+  #home-awards #award-left div:nth-child(2) {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/home/tim.png");
+    visibility: hidden; }
+  #home-awards #award-right div:nth-child(1) {
+    background-image: url("../img/home/pub.png");
+    background-size: cover;
+    background-position: center;
+    height: 30vh; }
+  #home-awards #award-right article {
+    padding-top: 30px; }
 
 /* =====================================
     Home RSVP Callout
@@ -752,72 +745,87 @@ footer #footer-bar {
     cursor: pointer; }
 
 #meet-designers-intro {
-  background-color: #fff;
+  background-color: #000;
   background-position: center;
-  background-size: contain;
-  background-image: url("../img/pattern/grey-pattern.svg");
-  height: auto; }
+  background-size: cover; }
+  #meet-designers-intro div {
+    padding: 60px 20px 30px 20px; }
 
 #name-gallery {
-  background-color: #000; }
-
-#name-gallery aside {
-  display: grid;
-  grid-template-columns: 50% 50%; }
+  background-color: #000;
+  padding: 20px; }
+  #name-gallery aside {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px; }
+    @media (min-width: 768px) {
+      #name-gallery aside {
+        grid-template-columns: 30% 30% 30%; } }
 
 #faculty-list-container {
   background-color: #F7F7F7; }
+  #faculty-list-container div {
+    display: grid; }
+    @media (min-width: 992px) {
+      #faculty-list-container div {
+        grid-template-columns: 30% 30% 30%; } }
+    #faculty-list-container div li {
+      padding: 5px 0px;
+      font-size: 1rem; }
+    #faculty-list-container div h2 {
+      padding-bottom: 20px; }
 
-li {
-  padding: 5px 0px;
-  font-size: 1rem; }
+#portfolio-intro {
+  background-color: #000;
+  background-position: center;
+  background-size: cover; }
+  #portfolio-intro div {
+    padding: 60px 20px 30px 20px; }
 
-h1 {
-  padding-bottom: 40px; }
+#portfolio-gallery-container {
+  background-color: #000; }
+  #portfolio-gallery-container > div ul {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(6, 20vh);
+    grid-template-columns: 50% 50%; }
+    @media (min-width: 768px) {
+      #portfolio-gallery-container > div ul {
+        grid-template-rows: repeat(6, 40vh); } }
+    @media (min-width: 992px) {
+      #portfolio-gallery-container > div ul {
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: repeat(4, 50vh); } }
+    @media (min-width: 1200px) {
+      #portfolio-gallery-container > div ul {
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: repeat(4, 50vh); } }
+    #portfolio-gallery-container > div ul li {
+      background-position: center;
+      background-size: cover; }
+    #portfolio-gallery-container > div ul li:nth-child(1) {
+      background-image: url("../img/gallery/rafaelmayani-1.png");
+      background-position: top; }
+    #portfolio-gallery-container > div ul li:nth-child(2) {
+      background-image: url("../img/gallery/decision-1.png"); }
+    #portfolio-gallery-container > div ul li:nth-child(3) {
+      background-image: url("../img/gallery/monospace-3.png"); }
+    #portfolio-gallery-container > div ul li:nth-child(4) {
+      background-image: url("../img/gallery/energy.png"); }
+    #portfolio-gallery-container > div ul li:nth-child(5) {
+      background-image: url("../img/gallery/paper-sculpture.png"); }
+    #portfolio-gallery-container > div ul li:nth-child(6) {
+      background-image: url("../img/gallery/flower-zoom.png"); }
+    #portfolio-gallery-container > div ul li:nth-child(7) {
+      background-image: url("../img/gallery/magazine.png"); }
+    #portfolio-gallery-container > div ul li:nth-child(8) {
+      background-image: url("../img/gallery/ny-subway-01.png"); }
+    #portfolio-gallery-container > div ul li:nth-child(9) {
+      background-image: url("../img/gallery/keetra7.png"); }
+    #portfolio-gallery-container > div ul li:nth-child(10) {
+      background-image: url("../img/gallery/gig-poster_v4.png"); }
+    #portfolio-gallery-container > div ul li:nth-child(11) {
+      background-image: url("../img/gallery/tim.png"); }
 
-@media (min-width: 768px) {
-  #faculty-list {
-    display: grid; } }
-
-#portfolio-gallery-container > div ul {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-rows: repeat(6, 20vh);
-  grid-template-columns: 50% 50%; }
-  @media (min-width: 768px) {
-    #portfolio-gallery-container > div ul {
-      grid-template-rows: repeat(6, 40vh); } }
-  @media (min-width: 992px) {
-    #portfolio-gallery-container > div ul {
-      grid-template-columns: 30% 30% 30%;
-      grid-template-rows: repeat(4, 50vh); } }
-  @media (min-width: 1200px) {
-    #portfolio-gallery-container > div ul {
-      grid-template-columns: 30% 30% 30%;
-      grid-template-rows: repeat(4, 50vh); } }
-  #portfolio-gallery-container > div ul li {
-    background-position: center;
-    background-size: cover; }
-  #portfolio-gallery-container > div ul li:nth-child(1) {
-    background-image: url("../img/gallery/rafaelmayani-1.png");
-    background-position: top; }
-  #portfolio-gallery-container > div ul li:nth-child(2) {
-    background-image: url("../img/gallery/decision-1.png"); }
-  #portfolio-gallery-container > div ul li:nth-child(3) {
-    background-image: url("../img/gallery/monospace-3.png"); }
-  #portfolio-gallery-container > div ul li:nth-child(4) {
-    background-image: url("../img/gallery/energy.png"); }
-  #portfolio-gallery-container > div ul li:nth-child(5) {
-    background-image: url("../img/gallery/paper-sculpture.png"); }
-  #portfolio-gallery-container > div ul li:nth-child(6) {
-    background-image: url("../img/gallery/flower-zoom.png"); }
-  #portfolio-gallery-container > div ul li:nth-child(7) {
-    background-image: url("../img/gallery/magazine.png"); }
-  #portfolio-gallery-container > div ul li:nth-child(8) {
-    background-image: url("../img/gallery/ny-subway-01.png"); }
-  #portfolio-gallery-container > div ul li:nth-child(9) {
-    background-image: url("../img/gallery/keetra7.png"); }
-  #portfolio-gallery-container > div ul li:nth-child(10) {
-    background-image: url("../img/gallery/gig-poster_v4.png"); }
-  #portfolio-gallery-container > div ul li:nth-child(11) {
-    background-image: url("../img/gallery/tim.png"); }
+#portfolio-cta {
+  background-color: #EFB51D; }

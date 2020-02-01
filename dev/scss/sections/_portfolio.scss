@@ -1,9 +1,21 @@
 // /* =============
-//     Galleruy
+//     Portfolio
 // ============= */
 
+#portfolio-intro{
+    // background-image: url("../img/pattern/grey-pattern.svg");
+    background-color: $black;
+    background-position: center;
+    background-size: cover;
+
+    div{
+        padding: 60px 20px 30px 20px;
+    }
+}
 #portfolio-gallery-container {
-    > div {
+    background-color: $black;
+
+    >div {
         ul {
             display: grid;
             grid-gap: 5px;
@@ -72,4 +84,9 @@
             }
         }
     }
+}
+
+
+#portfolio-cta{
+    background-color: $yellow;
 }
