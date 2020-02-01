@@ -2,31 +2,28 @@
     About Hero Section
 ===================================== */
 
+#about-intro{
+    background-image: url("../img/pattern/black-pattern.svg");
+    background-size: cover;
+    background-position: center;
+    // height: auto;
+    display: grid;
+    grid-template-columns: 80% auto;
+
+    @include md{
+        grid-template-columns: 70% auto;
+        height: 50vh;
+
+    }
+    @include lg{
+        height: 60vh;
+        grid-template-columns: 50% auto;
+        height: 60vh;
+    }
+}
+
+
 #about-header{
-
-    >div{
-        background-image: url("../img/pattern/black-pattern.svg");
-        background-size: cover;
-        background-position: center;
-        // height: auto;
-        display: grid;
-        grid-template-columns: 80% auto;
-
-        @include md{
-            grid-template-columns: 70% auto;
-            height: 50vh;
-
-        }
-        @include lg{
-            height: 60vh;
-            grid-template-columns: 50% auto;
-            height: 60vh;
-        }
-    }
-
-    .h1-white{
-        color: $white;
-    }
 
     aside{
         margin-top: 50px;
