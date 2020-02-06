@@ -9,6 +9,16 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/deploy/_nav-bg.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/deploy/_nav-bg-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/deploy/about.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -282,6 +292,17 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/deploy/img/pattern/20-single.png": {
+		"ft": 32768,
+		"iS": 14029,
+		"oA": 0,
+		"oAP": "/deploy/img/pattern/20-single.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/deploy/img/pattern/black-pattern.svg": {
 		"ft": 2097152,

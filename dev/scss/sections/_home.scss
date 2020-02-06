@@ -4,7 +4,7 @@
 /* =====================================
     Home Hero Section
 ===================================== */
-#home-hero {
+#home-hero{
     // display: grid;
     // grid-template-columns: 70% 30%;
     // >div{
@@ -23,19 +23,16 @@
     //         height: 20vh;
     //     }
     // }
-    > div img {
-        padding-left: 20px;
-    }
+    // > div img {
+    //     padding-left: 20px;
+    // }
 }
+
 
 #home-title {
     display: grid;
     grid-template-columns: 70% 30%;
-    padding: 0 20px 60px;
-    // border: 2px blue solid;
-    > div {
-        // border: 2px blue solid;
-    }
+    padding: 150px 0px 60px 20px;
 
     h1 {
         font-weight: 400;

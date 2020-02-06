@@ -1,0 +1,9 @@
+#nav-bg {
+  position: fixed;
+  z-index: 20;
+  height: 400px;
+  width: 100vw;
+  background-color: #FF4242;
+  top: 0;
+  right: 0;
+  background-image: url("../pattern/20-single.png"); }

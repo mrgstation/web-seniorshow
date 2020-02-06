@@ -1,18 +1,13 @@
-// #nav-bg{
-//     background-color: #fff;
-//     height: 40px;
-//     width: 100px;
-//     z-index: 50;
-// }
-//
-//
-// #nav-bg{
-//     position: fixed;
-//     height: 50px;
-//     width: 50px;
-//     background-color: $rust;
-//     z-index: 15;
-//     top: 10px;
-//     right: 10px;
-//     border-radius: 100%;
-// }
+#nav-bg{
+    position: fixed;
+    z-index: 20;
+    height: 400px;
+        @include md{
+            height: 420px;
+        }
+    width: 100vw;
+    background-color: #FF4242;
+    top: 0;
+    right: 0;
+    background-image: url("../pattern/20-single.png");
+}
