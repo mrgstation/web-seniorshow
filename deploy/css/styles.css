@@ -328,6 +328,9 @@ a {
   text-decoration: none;
   color: #000; }
 
+.image-link {
+  text-decoration: none; }
+
 /* =============
     Typography
 ============= */
@@ -450,15 +453,46 @@ textarea {
   -webkit-appearance: none; }
 
 /* =============
-    Navigation
+    Main Navigation
 ============= */
+#main-nav {
+  background-color: #FF4242;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  text-align: left;
+  margin-top: 45px; }
+  @media (min-width: 768px) {
+    #main-nav {
+      margin-top: 65px; } }
+  #main-nav ul {
+    padding: 60px 0px 20px 20px; }
+    #main-nav ul li {
+      margin-bottom: 20px; }
+      #main-nav ul li a:link, #main-nav ul li a:visited {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.25s;
+        font-size: 1.625rem;
+        font-weight: 700; }
+      #main-nav ul li a:active, #main-nav ul li a:hover {
+        color: #fff;
+        border-bottom: 2px #fff solid; }
+
 /* =============
     Header
 ============= */
 #header-container {
+  background-color: #fff;
   display: grid;
   grid-template-columns: 80% 20%;
-  padding: 10px 20px 10px 20px; }
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  z-index: 45; }
   @media (min-width: 768px) {
     #header-container {
       grid-template-columns: 70% 30%; } }
@@ -470,21 +504,10 @@ header img {
       height: 65px; } }
 
 #burger-container {
+  align-items: flex-end;
   display: flex; }
-
-#burger-container svg {
-  height: 30px;
-  align-self: flex-end; }
-
-#hidden-nav {
-  background-color: #000; }
-
-#hidden-nav ul li p {
-  font-size: 2.25rem;
-  color: #fff;
-  font-family: 'Source Sans Pro';
-  font-weight: 900;
-  padding-bottom: 20px; }
+  #burger-container svg {
+    height: 30px; }
 
 /* =============
     Footer
@@ -545,23 +568,19 @@ footer article p:nth-child(3) {
 
 footer ul {
   padding: 20px 0px 50px 0px; }
-
-footer li {
-  padding-bottom: 20px;
-  font-size: 1.5rem; }
-  @media (min-width: 768px) {
-    footer li {
-      padding-bottom: 15px;
-      font-size: 1.125rem; } }
-
-footer nav a:link {
-  font-weight: 300; }
-
-footer nav a:hover {
-  border-bottom: 2px #FF4242 solid; }
-
-footer nav a:active {
-  color: #FF4242; }
+  footer ul li {
+    padding-bottom: 20px;
+    font-size: 1.5rem; }
+    @media (min-width: 768px) {
+      footer ul li {
+        padding-bottom: 15px;
+        font-size: 1.125rem; } }
+    footer ul li a:link {
+      font-weight: 300; }
+    footer ul li a:hover {
+      border-bottom: 2px #FF4242 solid; }
+    footer ul li a:active {
+      color: #FF4242; }
 
 footer #footer-bar {
   background-color: #000;

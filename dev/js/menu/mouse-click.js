@@ -3,8 +3,6 @@ var menuHide = gsap.timeline({paused:true});
 
 gsap.set("#plus",{transformOrigin: "50% 50%"});
 menuHide.to("#menu",{alpha:0}, "create-x")
-
-
 .to("#plus",{duration: 0.25, rotate:45}, "create-x");
 
 

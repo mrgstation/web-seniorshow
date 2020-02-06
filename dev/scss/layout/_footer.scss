@@ -86,7 +86,6 @@ footer {
     // Links ==========================
     ul{
         padding: 20px 0px 50px 0px;
-    }
 
         li{
             padding-bottom: 20px;
@@ -97,19 +96,20 @@ footer {
                     font-size: rem-calc(18);
                 }
 
+            a:link{
+                font-weight: 300;
+            }
+            a:hover{
+                border-bottom: 2px $red solid;
+            }
+
+            a:active{
+                color: $red;
+            }
+
         }
 
-        nav a:link{
-            font-weight: 300;
-        }
-        nav a:hover{
-            border-bottom: 2px $red solid;
-        }
-
-        nav a:active{
-            color: $red;
-        }
-
+    }
 
 
     // Footer Bar =========================

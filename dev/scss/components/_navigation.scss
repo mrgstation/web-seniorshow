@@ -1,3 +1,39 @@
 /* =============
-    Navigation
+    Main Navigation
 ============= */
+#main-nav{
+    background-color: $red;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    text-align: left;
+    margin-top: 45px;
+        @include md{
+            margin-top: 65px;
+        }
+
+    ul {
+        padding: 60px 0px 20px 20px;
+
+
+        li {
+            margin-bottom: 20px;
+
+            a:link,a:visited {
+                color: #fff;
+                text-decoration: none;
+                transition: 0.25s;
+                font-size: rem-calc(26);
+                font-weight: 700;
+            }
+
+            a:active,a:hover {
+                color: $white;
+                border-bottom: 2px $white solid;
+
+            }
+        }
+    }
+}

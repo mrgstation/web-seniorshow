@@ -352,6 +352,22 @@
 		"oAP": "/deploy/meet.html",
 		"oF": 0
 		},
+	"/deploy/nav-bg.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/nav-bg.html",
+		"oF": 0
+		},
+	"/deploy/nav.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/nav.html",
+		"oF": 0
+		},
 	"/deploy/portfolio.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -374,7 +390,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/footer.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/dev/header.kit": {
 		"cB": 0,
@@ -382,7 +398,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/header.html",
-		"oF": 0
+		"oF": 1
 		},
 	"/dev/index.kit": {
 		"cB": 0,
@@ -458,14 +474,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/kit/home/home.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/kit/home/home.html",
-		"oF": 0
-		},
 	"/dev/meet.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -473,6 +481,22 @@
 		"oA": 0,
 		"oAP": "/deploy/meet.html",
 		"oF": 2
+		},
+	"/dev/nav-bg.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/deploy/nav-bg.html",
+		"oF": 3
+		},
+	"/dev/nav.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/deploy/nav.html",
+		"oF": 3
 		},
 	"/dev/portfolio.kit": {
 		"cB": 0,
@@ -547,6 +571,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/components/_nav-bg.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/deploy/_nav-bg.css",
+		"oF": 3,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/components/_navigation.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -554,9 +591,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/components/_navigation.css",
-		"oF": 0,
+		"oA": 0,
+		"oAP": "/deploy/css/styles.css",
+		"oF": 3,
 		"oS": 0,
 		"uL": 1
 		},
@@ -569,7 +606,7 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/helpers/_mixins.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},
