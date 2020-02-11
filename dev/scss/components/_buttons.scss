@@ -24,7 +24,7 @@ button{
 
 .button{
     display: flex;
-    
+
 }
 
 .button img{
@@ -52,12 +52,8 @@ button:hover {
         height: 130px;
     }
 
-    @include lg{
-        width: 20vw;
-    }
-
     @include xl{
-        width: 15vw;
+        width: 24vw;
     }
 
     p{

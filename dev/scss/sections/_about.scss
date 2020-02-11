@@ -9,16 +9,16 @@
     // height: auto;
     display: grid;
     grid-template-columns: 80% auto;
+    // padding-top: 90px;
 
     @include md{
         grid-template-columns: 70% auto;
-        height: 50vh;
+        height: 40vh;
 
     }
     @include lg{
-        height: 60vh;
+        height: 70vh;
         grid-template-columns: 50% auto;
-        height: 60vh;
     }
 }
 

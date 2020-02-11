@@ -37,6 +37,8 @@
     h1 {
         font-weight: 400;
         font-size: rem-calc(36);
+        width: 40vw;
+
         @include md {
             font-size: rem-calc(51);
         }
@@ -106,7 +108,7 @@
         display: grid;
         padding: 10px 20px;
         @include md {
-            grid-template-columns: auto auto auto;
+            grid-template-columns: 300px 300px auto;
             grid-template-areas: "preview meet .";
         }
     }
@@ -117,13 +119,28 @@
 #home-awards {
     display: grid;
     grid-gap: 20px;
-    // grid-template-columns: 40% 60%;
+
+    @include md{
+        grid-template-columns: 40% 60%;
+        margin: 40px 100px;
+    }
+
     #award-left {
+        display: grid;
+
         div:nth-child(1) {
             background-position: center;
             background-size: cover;
             background-image: url("../img/home/loop.png");
             height: 40vh;
+
+            @include md{
+                height: 25vh;
+            }
+
+            @include lg{
+                height: 35vh;
+            }
         }
 
         div:nth-child(2) {
@@ -131,6 +148,15 @@
             background-size: cover;
             background-image: url("../img/home/tim.png");
             visibility: hidden;
+
+            @include md{
+                visibility: visible;
+                height: 20vh;
+            }
+
+            @include lg{
+                height: 30vh;
+            }
         }
     }
 
@@ -139,6 +165,10 @@
         background-size: cover;
         background-position: center;
         height: 30vh;
+
+        @include lg{
+            height: 50vh;
+        }
     }
 
     #award-right article {

@@ -329,7 +329,7 @@ a {
   color: #000; }
 
 .top-section-padding {
-  padding-top: 45px; }
+  padding-top: 90px; }
 
 /* =============
     Typography
@@ -415,12 +415,9 @@ button:hover {
     .name-button {
       width: 25vw;
       height: 130px; } }
-  @media (min-width: 992px) {
-    .name-button {
-      width: 20vw; } }
   @media (min-width: 1200px) {
     .name-button {
-      width: 15vw; } }
+      width: 24vw; } }
   .name-button p {
     font-size: 1.125rem;
     font-family: 'Source Sans Pro', sans-serif; }
@@ -614,7 +611,8 @@ footer #footer-bar {
   padding: 150px 0px 60px 20px; }
   #home-title h1 {
     font-weight: 400;
-    font-size: 2.25rem; }
+    font-size: 2.25rem;
+    width: 40vw; }
     @media (min-width: 768px) {
       #home-title h1 {
         font-size: 3.1875rem; } }
@@ -666,7 +664,7 @@ footer #footer-bar {
     padding: 10px 20px; }
     @media (min-width: 768px) {
       #home-options aside {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 300px 300px auto;
         grid-template-areas: "preview meet ."; } }
 
 /* =====================================
@@ -675,21 +673,43 @@ footer #footer-bar {
 #home-awards {
   display: grid;
   grid-gap: 20px; }
-  #home-awards #award-left div:nth-child(1) {
-    background-position: center;
-    background-size: cover;
-    background-image: url("../img/home/loop.png");
-    height: 40vh; }
-  #home-awards #award-left div:nth-child(2) {
-    background-position: center;
-    background-size: cover;
-    background-image: url("../img/home/tim.png");
-    visibility: hidden; }
+  @media (min-width: 768px) {
+    #home-awards {
+      grid-template-columns: 40% 60%;
+      margin: 40px 100px; } }
+  #home-awards #award-left {
+    display: grid; }
+    #home-awards #award-left div:nth-child(1) {
+      background-position: center;
+      background-size: cover;
+      background-image: url("../img/home/loop.png");
+      height: 40vh; }
+      @media (min-width: 768px) {
+        #home-awards #award-left div:nth-child(1) {
+          height: 25vh; } }
+      @media (min-width: 992px) {
+        #home-awards #award-left div:nth-child(1) {
+          height: 35vh; } }
+    #home-awards #award-left div:nth-child(2) {
+      background-position: center;
+      background-size: cover;
+      background-image: url("../img/home/tim.png");
+      visibility: hidden; }
+      @media (min-width: 768px) {
+        #home-awards #award-left div:nth-child(2) {
+          visibility: visible;
+          height: 20vh; } }
+      @media (min-width: 992px) {
+        #home-awards #award-left div:nth-child(2) {
+          height: 30vh; } }
   #home-awards #award-right div:nth-child(1) {
     background-image: url("../img/home/pub.png");
     background-size: cover;
     background-position: center;
     height: 30vh; }
+    @media (min-width: 992px) {
+      #home-awards #award-right div:nth-child(1) {
+        height: 50vh; } }
   #home-awards #award-right article {
     padding-top: 30px; }
 
@@ -714,12 +734,11 @@ footer #footer-bar {
   @media (min-width: 768px) {
     #about-intro {
       grid-template-columns: 70% auto;
-      height: 50vh; } }
+      height: 40vh; } }
   @media (min-width: 992px) {
     #about-intro {
-      height: 60vh;
-      grid-template-columns: 50% auto;
-      height: 60vh; } }
+      height: 70vh;
+      grid-template-columns: 50% auto; } }
 
 #about-header aside {
   margin-top: 50px;
@@ -786,7 +805,8 @@ footer #footer-bar {
   #name-gallery aside {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 10px; }
+    grid-gap: 10px;
+    padding-bottom: 50px; }
     @media (min-width: 768px) {
       #name-gallery aside {
         grid-template-columns: 30% 30% 30%; } }
