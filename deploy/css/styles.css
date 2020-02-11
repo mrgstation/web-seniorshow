@@ -657,15 +657,13 @@ footer #footer-bar {
 /* =====================================
     Home Hero CTA Section
 ===================================== */
-#home-options {
-  background-color: #EFB51D; }
-  #home-options aside {
-    display: grid;
-    padding: 10px 20px; }
-    @media (min-width: 768px) {
-      #home-options aside {
-        grid-template-columns: 300px 300px auto;
-        grid-template-areas: "preview meet ."; } }
+#home-options aside {
+  display: grid;
+  padding: 10px 20px; }
+  @media (min-width: 768px) {
+    #home-options aside {
+      grid-template-columns: 300px 300px auto;
+      grid-template-areas: "preview meet ."; } }
 
 /* =====================================
     Home Award Winning
